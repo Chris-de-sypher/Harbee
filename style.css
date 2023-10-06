@@ -1,0 +1,410 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  background-color: white;
+  font-family: "Mulish", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+nav ul li {
+  list-style: none;
+}
+nav .right-side {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-left: 11px;
+}
+nav .right-side .right-text p {
+  font-size: 12px;
+  line-height: 18px;
+}
+ul {
+  border-right: 1px solid gray;
+  padding-right: 27px;
+  line-height: 30px;
+}
+.right-icon img {
+  width: 27px;
+}
+#num {
+  font-weight: bold;
+}
+/* main element styling */
+main {
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.landing-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* place-items: center; */
+  gap: 0.4em;
+  overflow-x: hidden;
+
+}
+
+.right-image {
+  position: relative;
+  margin-right: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-image .the-service-img {
+  width: 400px;
+  height: 340px;
+  margin: 0 auto;
+  position: relative;
+}
+.right-image .the-service-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.right-image .service {
+  position: absolute;
+  top: 0px;
+  left: -110px;
+}
+.right-image .rating {
+  position: absolute;
+  bottom: -70px;
+  right: -130px;
+}
+
+.landing-page .left-text .content {
+  font-family: "Manrope", sans-serif;
+}
+.landing-page .left-text .content h1::first-letter {
+  color: red;
+  font-family: "Manrope", sans-serif;
+}
+.landing-page .left-text .content button {
+  margin-top: 30px;
+  font-family: "Manrope", sans-serif;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  background-color: red;
+  color: #fff;
+}
+
+#landing-page-time {
+  display: flex;
+  gap: 0.6em;
+  place-items: center;
+  margin-top: 50px;
+}
+
+/* second section styling */
+
+/* .second-section .content-ii {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+} */
+
+.quote-sec {
+  background-color: #e2e6e9;
+  padding: 20px;
+}
+
+.second-section {
+  display: flex;
+}
+
+.second-section .content-ii {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* place-items: center; */
+  flex: 2;
+}
+.second-section .content-ii .give {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  margin-top: 30px;
+}
+.second-section .content-ii .title {
+  display: flex;
+  place-items: center;
+  gap: 0.4em;
+}
+.second-section .content-ii p {
+  margin-left: 42px;
+}
+.second-section .content-ii .give img {
+  display: block;
+}
+.second-section .content-ii .give span {
+  grid-column: span 2;
+  font-weight: bold;
+}
+.second-section .content-ii h2 {
+  grid-column: span;
+}
+
+.right-side-text {
+  flex: 2;
+  text-align: center;
+}
+.right-side-text h2 {
+}
+.right-side-text .white-form {
+  margin-top: 30px;
+}
+input {
+  width: 78%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  outline: none;
+  height: 60px;
+  margin-top: 2px;
+  padding-left: 10px;
+  font-family: "Manrope", sans-serif;
+  transition: 0.4s ease-out;
+  border-radius: 6px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border-color: green;
+  transition: 0.4s ease-in;
+}
+
+.more_about_us {
+  margin-top: 70px;
+  display: flex;
+  background-color: #fff;
+  color: #444;
+  width: max-content;
+  padding: 10px 13px;
+  border-radius: 6px;
+  font-family: serif;
+  cursor: pointer;
+}
+
+#arrow {
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+.white {
+  background-color: white;
+}
+.third_sec {
+  margin-top: 20px;
+}
+.quotes {
+  display: flex;
+  place-items: center;
+  gap: 1em;
+  padding: 10px;
+}
+.quotes .left-text-iii {
+  flex: 2;
+  padding: 50px 10px;
+}
+.quotes .left-text-iii .content-iv {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+}
+
+.content-iv h3 {
+  font-size: 45px;
+}
+.quotes .right-side-text-iii {
+  flex: 2;
+}
+.quotes .right-side-text-iii .content-v {
+  margin-left: 20px;
+  padding: 18px;
+}
+.quotes .right-side-text-iii .content-v .card {
+  position: relative;
+  display: flex;
+  line-height: 1.4;
+  margin-top: 70px;
+}
+.quotes .right-side-text-iii .content-v .card span {
+  font-weight: bold;
+}
+.new-img {
+  position: absolute;
+  width: 30px;
+  left: -35px;
+  top: -5px;
+}
+
+.line {
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+.content-iv p {
+  line-height: 1.4;
+  margin-top: 10px;
+}
+.quotes .left-text-iii .content-iv button {
+  background-color: orangered;
+  width: max-content;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* we offer full service section */
+
+.parent-flex {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+.parent-flex .center {
+  font-size: 23px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  margin: 30px 0;
+}
+.parent-flex .offer-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.offer-list .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.6em;
+  margin-top: 50px;
+}
+
+.offer-list .grid .box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  min-height: 130px;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 3px 3px rgba(204, 201, 201, 0.16);
+}
+.box #space {
+  margin-top: 12px;
+}
+#red {
+  background-color: orangered;
+  color: white;
+}
+.offer-list #learn {
+  display: flex;
+  position: relative;
+  bottom: 100%;
+  left: 230%;
+}
+#learn .arr {
+  padding-left: 10px;
+}
+/*Get in touch with us section */
+
+.get-in-touch {
+  margin-top: 100px;
+  transition: 0.4s ease-in;
+  background-color: red;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 20px;
+}
+
+.get-in-touch .first-row .left-white-car {
+  height: max-content;
+  background-image: url("./images/Image\ 1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.get-in-touch .first-row .left-white-car .left-car-card {
+  width: 70%;
+  font-family: "Manrope", sans-serif;
+  color: whitesmoke;
+  background-color: orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+}
+.get-in-touch .first-row .left-white-car .left-car-card #black-btn {
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.get-in-touch .second-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get-in-touch .second-row #content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+  font-family: "Manrope", sans-serif;
+  place-items: center;
+  grid-gap: 0.5em;
+  text-wrap: wrap;
+}
+
+.get-in-touch .second-row #content p {
+  color: #fff;
+}
+
+/* for mobile */

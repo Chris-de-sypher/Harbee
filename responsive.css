@@ -1,0 +1,121 @@
+/** @format */
+
+@media (max-width: 1000px) {
+  .offer-list .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .the-service-img {
+    width: 240px !important;
+  }
+  .left-text {
+    width: calc(100% - 5em);
+  }
+  .right-image .service {
+    display: none;
+  }
+  .right-image .rating {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  main {
+    overflow-x: hidden !important;
+  }
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in;
+  }
+  .right-side-text {
+    margin-top: 20px;
+    transition: 0.4s ease-in;
+  }
+}
+@media (max-width: 800px) {
+  .quotes {
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    position: relative;
+    top: 150px;
+    right: -80px;
+    background-color: #ccc; /*change the bg-color here*/
+    width: 200px;
+    display: none;
+  }
+  ul {
+    all: revert;
+    line-height: 3;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+  }
+  .right-side {
+    display: none !important;
+    transition: 0.4s ease-out;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .get-in-touch {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 570px) {
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .get-in-touch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .get-in-touch .second-row #content {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .landing-page {
+    padding: 13px;
+  }
+}
+@media (max-width: 460px) {
+  .second-section {
+    padding: 10px;
+  }
+  .quote-sec {
+    background-color: #e2e6e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw !important;
+  }
+  .right-side-text{
+    margin: revert;
+    margin-top: 30px;
+  }
+  .parent-flex {
+    background-color: transparent;
+  }
+  .offer-list .grid {
+    grid-template-columns: 1fr;
+  }
+}
